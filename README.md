@@ -1,4 +1,4 @@
-#include <stdio.h>
+ #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 char *productName[] = {"sugar", "milk", "vegetable masala", "washing powder", "salt", "poha", "oil", "tooth paste", "hair conditionar", "wheat flour", "red chilli", "maida", "coffee", "tea", "butter", "milk powder", "turmeric powder", "hair oil", "ghee", "face powder"};
@@ -350,7 +350,7 @@ void saveBill() {
     fclose(file);  // Close the file after writing
 }
 
-void main()
+int main()
 {
     char ch, temp_str[20];
     int check,count=0;
@@ -423,3 +423,4 @@ void main()
     calculate_bill();
     saveBill();
 }
+
